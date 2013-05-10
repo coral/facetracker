@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.2.dtd" >
-   <PATCH nodename="C:\Users\DHStream1\Desktop\post mortem mirror\studiokreft_post_mortem_mirror.v4p" filename="C:\Users\k1\Desktop\voronoi\studiokreft_post_mortem_mirror.v4p" systemname="studiokreft_post_mortem_mirror">
-   <BOUNDS height="15000" left="3075" top="180" type="Window" width="18465">
+   <PATCH nodename="C:\Users\DHStream1\Desktop\facetracker\studiokreft_post_mortem_mirror.v4p" filename="C:\Users\k1\Desktop\voronoi\studiokreft_post_mortem_mirror.v4p" systemname="studiokreft_post_mortem_mirror">
+   <BOUNDS height="15000" left="7965" top="540" type="Window" width="18465">
    </BOUNDS>
    <NODE componentmode="Hidden" id="35" nodename="Vector (3d Join)" systemname="Vector (3d Join)">
    <BOUNDS height="270" left="600" top="3630" type="Node" width="1995">
@@ -593,7 +593,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3510" top="7425" width="1170" height="300">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" encoded="0" values="001.png" visible="1">
+   <PIN pinname="Input String" slicecount="1" encoded="0" visible="1" values="001.png">
    </PIN>
    <PIN pinname="Default" slicecount="1" encoded="0" values="image.jpg">
    </PIN>

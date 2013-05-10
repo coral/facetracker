@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta28.dtd" >
-   <PATCH nodename="C:\Users\k1\Desktop\post mortem mirror\studiokreft_post_mortem_mirror.v4p" filename="C:\Users\k1\Desktop\voronoi\studiokreft_post_mortem_mirror.v4p" systemname="studiokreft_post_mortem_mirror">
-   <BOUNDS height="10725" left="855" top="150" type="Window" width="9060">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.2.dtd" >
+   <PATCH nodename="C:\Users\DHStream1\Desktop\post mortem mirror\studiokreft_post_mortem_mirror.v4p" filename="C:\Users\k1\Desktop\voronoi\studiokreft_post_mortem_mirror.v4p" systemname="studiokreft_post_mortem_mirror">
+   <BOUNDS height="15000" left="3075" top="180" type="Window" width="18465">
    </BOUNDS>
    <NODE componentmode="Hidden" id="35" nodename="Vector (3d Join)" systemname="Vector (3d Join)">
    <BOUNDS height="270" left="600" top="3630" type="Node" width="1995">
@@ -549,9 +549,9 @@
    <LINK srcnodeid="92" srcpinname="Layer" dstnodeid="117" dstpinname="Input Node">
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="120">
-   <BOUNDS type="Node" left="9285" top="1710" width="100" height="100">
+   <BOUNDS type="Node" left="8775" top="1380" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="9285" top="1710" width="795" height="240">
+   <BOUNDS type="Box" left="8775" top="1380" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="showface">
    </PIN>
@@ -583,7 +583,7 @@
    </BOUNDS>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
-   <PIN pinname="Filename" slicecount="1" values="001.png" encoded="0">
+   <PIN pinname="Filename" slicecount="1" encoded="0" values="001.png">
    </PIN>
    </NODE>
    <LINK srcnodeid="126" srcpinname="Texture Out" dstnodeid="52" dstpinname="Texture">
@@ -593,11 +593,11 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3510" top="7425" width="1170" height="300">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="001.png" encoded="0">
+   <PIN pinname="Input String" slicecount="1" encoded="0" values="001.png" visible="1">
    </PIN>
-   <PIN pinname="Default" slicecount="1" values="image.jpg" encoded="0">
+   <PIN pinname="Default" slicecount="1" encoded="0" values="image.jpg">
    </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="|All Pictures (*.bmp, *.dds, *.hdr, *.jpg, *.png, *.tif, *.tga)||*.bmp;*.dds;*.hdr;*.jpg;*.png;*.tif;*.tga||Bitmap (*.bmp)||*.bmp||HDR (*.hdr)||*.hdr||DDS (*.dds)||*.dds||JPG (*.jpg)||*.jpg||PNG (*.png)||*.png||TIFF (*.tif)||*.tif||Targa (*.tga)||*.tga|" encoded="0">
+   <PIN pinname="File Mask" slicecount="1" encoded="0" values="|All Pictures (*.bmp, *.dds, *.hdr, *.jpg, *.png, *.tif, *.tga)||*.bmp;*.dds;*.hdr;*.jpg;*.png;*.tif;*.tga||Bitmap (*.bmp)||*.bmp||HDR (*.hdr)||*.hdr||DDS (*.dds)||*.dds||JPG (*.jpg)||*.jpg||PNG (*.png)||*.png||TIFF (*.tif)||*.tif||Targa (*.tga)||*.tga|">
    </PIN>
    <PIN pinname="Maximum Characters" slicecount="1" values="-1">
    </PIN>
@@ -605,5 +605,19 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="127" srcpinname="Output String" dstnodeid="126" dstpinname="Filename">
+   </LINK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="133">
+   <BOUNDS type="Node" left="12540" top="3465" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="12540" top="3465" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="filename">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" values="001.png">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="133" srcpinname="Output String" dstnodeid="127" dstpinname="Input String">
    </LINK>
    </PATCH>
